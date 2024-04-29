@@ -84,7 +84,6 @@ def create_pupil(email, password, first_name, last_name, id_number, age):
     pupils_col.insert_one(new_user)
 
 
-
 def check_registered(email):
     if get_user_by_email(email):
         return True
