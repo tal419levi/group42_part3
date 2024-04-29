@@ -12,6 +12,7 @@ Feedback = Blueprint(
 # Counter for generating unique IDs
 feedback_counter = 0
 
+
 @Feedback.route('/Feedback', methods=['GET', 'POST'])
 def index():
     global feedback_counter
