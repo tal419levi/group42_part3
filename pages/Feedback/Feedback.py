@@ -16,6 +16,7 @@ feedback_counter = 0
 @Feedback.route('/Feedback', methods=['GET', 'POST'])
 def index():
     global feedback_counter
+
     if request.method == 'POST':
         feedback_counter += 1  # Increment the counter for each new feedback submission
         id_number = feedback_counter  # Use the counter value as the ID
