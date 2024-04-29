@@ -1,0 +1,38 @@
+header {
+background-color: #4CAF50;
+color: white;
+text-align: center;
+padding: 20px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+font-family: Arial, sans-serif;
+}
+header h1 {
+margin: 0;
+}
+body {
+    font-family: Bahnschrift, sans-serif ;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+
+
+
+.buttons-container {
+    text-align: center; /* Center align the buttons */
+    margin-top: 20px; /* Adjust as needed to create space between the button container and other elements */
+}
+
+.buttons-container a {
+    display: inline-block; /* Display the link as a block element */
+    padding: 10px 20px; /* Add padding to the link */
+    background-color: #4CAF50; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Remove default underline */
+    border-radius: 5px; /* Add rounded corners to the button */
+    transition: background-color 0.3s ease; /* Add smooth transition effect */
+}
+
+.buttons-container a:hover {
+    background-color: darkseagreen; /* Change background color on hover */
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title> {% block title %}{% endblock %}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}"/>
+{% block page_head_css %}
+{% endblock %}
+</head>
+<body>
+ <header><h1 dir="rtl"> Teach Me ההצלחה היא מסע ולא יעד</h1>
+    </header>
+<nav>
+    {% if session.get('email') %}
+        <a href="/MainPage">דף הבית</a>
+        <a href="/logout">התנתק</a>
+    {% else %}
+         <a href="/recommendation">המלצות ממשתמשים</a>
+        <a href="/login">כניסה למערכת</a>
+        <a href="/">דף הבית</a>
+    {% endif %}
+</nav>
+
+{% block content %}
+{% endblock %}
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-item">כתובת משרדים: אוניברסיטת בן גוריון 1, באר שבע</div>
+        <div class="footer-item">שעות קבלה טלפונית: א'-ה' 08:00-16:00</div>
+        <div class="footer-item">טלפון: 03-1234567 | פקס: 03-7654321</div>
+        <div class="footer-item">
+            <a href="https://facebook.com" target="_blank">פייסבוק</a> |
+            <a href="https://instagram.com" target="_blank">אינסטגרם</a>
+        </div>
+    </div>
+</footer>
+{% block page_body_js %}
+    <script src="{{ url_for('static', filename='js/base.js') }}"></script>
+{% endblock %}
+</body>
+</html>

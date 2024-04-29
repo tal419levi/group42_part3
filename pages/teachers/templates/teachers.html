@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} 'teachers' {% endblock %}
+
+{% block page_head_css %}
+    <link rel="stylesheet" href="{{ url_for('teachers.static', filename='css/teachers.css') }}">
+{% endblock %}
+
+{% block content %}
+    <h2>מגוון מורים שעובדים איתנו</h2>
+    <div class="grid-container">
+        {% for teacher in teachers %}
+        <div class="teacher">
+            <h3>מורה: {{ teacher.teacher }}</h3>
+            <p>מקצוע: {{ teacher.subject }}</p>
+            <p>אזור ביצוע שיעור: {{ teacher.location }}</p>
+            <p>וותק: {{ teacher.vetek }}</p>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+{% block page_body_js %}
+    <script src="{{ url_for('teachers.static', filename='js/teachers.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %} 'MainPage' {% endblock %}
+{% block page_head_css %}
+    <link rel="stylesheet" href="{{ url_for('MainPage.static', filename='css/MainPage.css') }}">
+{% endblock %}
+{% block content %}
+    <h1>שלום, בחר בפעולה הרצויה</h1>
+<div class="buttons-container">
+    <a href="{{ url_for('history.index') }}" id="history-page-link">היסטורית שיעורים</a>
+    <a href="{{ url_for('teachers.index') }}" id="teachers-page-link">צפייה במספר מורים שעובדים איתנו</a>
+</div>
+{% endblock %}
+
+{% block page_body_js %}
+    <script src="{{ url_for('MainPage.static', filename='js/MainPage.js') }}"></script>
+{% endblock %}

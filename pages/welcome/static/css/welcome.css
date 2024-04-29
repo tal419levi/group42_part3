@@ -1,0 +1,54 @@
+body {
+    font-family: Bahnschrift, sans-serif ;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+
+
+
+
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: cadetblue;
+    font-size: 36px;
+}
+
+h3 {
+    color: green;
+    font-size: 36px;
+}
+
+/* welcome.css */
+.centered-image {
+    display: block;
+    margin: 20px auto; /* Center the image horizontally */
+    max-width: 40%; /* Ensure the image doesn't exceed its container */
+}
+.title-animation {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    animation: colorChange 4s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #4CAF50;
+    }
+    50% {
+        background-color: #007bff;
+    }
+    100% {
+        background-color: darkseagreen;
+    }
+}

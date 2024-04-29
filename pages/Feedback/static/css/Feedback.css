@@ -1,0 +1,68 @@
+.container {
+        display: grid;
+        grid-template-columns: 1fr; /* עמודה אחת */
+        grid-gap: 20px; /* רווח בין התאים */
+        direction: rtl;
+        text-align: center;
+    }
+
+    #feedback {
+        width: 100%; /* רוחב מקסימלי */
+        height: 150px; /* גובה קבוע */
+        margin-bottom: 20px; /* רווח מתחת לתיבת הטקסט */
+        justify-self: center;
+    }
+
+    #rating {
+        width: 90px; /* רוחב מקסימלי */
+        margin-bottom: 20px; /* רווח מתחת לתיבת הטקסט*/
+        justify-self: center;
+
+    }
+
+    #submit-btn {
+        width: 150px; /* רוחב קבוע */
+        height: 50px; /* גובה קבוע */
+    }
+
+    .subtitle {
+        text-align: right; /* יישור לימין */
+        margin-top: 10px; /* רווח מלמעלה */
+    }
+
+    .button-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 300px; /* כדי להפריד בין הכפתורים */
+    }
+
+    textarea, select {
+        width: 100%;
+        max-width: 400px;
+        text-align: right;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        resize: none;
+        margin-bottom: 20px;
+    }
+
+     button {
+        padding: 15px 30px;
+        font-size: 18px;
+        background-color: darkseagreen;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-bottom: 20px;
+    }
+
+
+    .button:hover {
+        background-color: #45a049; /* צבע רקע כאשר עוברים עם העכבר */
+    }
+h2{
+    text-align: center;
+}

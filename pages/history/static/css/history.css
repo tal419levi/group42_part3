@@ -1,0 +1,45 @@
+/* history.css */
+h2 {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    font-size: 32px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30px, 200px));
+    gap: 20px;
+    text-align: right;
+    justify-content: center; /* Center the grid items horizontally */
+}
+
+.lesson {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    margin-top: 20px; /* Add space between lessons and button */
+}
+
+.history-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: darkseagreen;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.history-button:hover {
+    background-color: #45a049;
+}

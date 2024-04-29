@@ -1,0 +1,30 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust minmax values as needed */
+    grid-auto-rows: minmax(100px, auto);
+    gap: 20px; /* Adjust the gap between grid items */
+    direction: rtl; /* Right to left direction */
+}
+h2 {
+    text-align: center;
+}
+.teacher {
+    background-color: #f8f9fa; /* Background color for each teacher */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+.teacher:hover {
+    transform: translateY(-5px); /* Add hover effect */
+}
+
+.teacher h3 {
+    margin-top: 0;
+    color: #343a40; /* Teacher name color */
+}
+
+.teacher p {
+    margin: 5px 0;
+    color: #6c757d; /* Text color */
+}

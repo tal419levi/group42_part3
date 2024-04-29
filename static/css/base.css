@@ -1,0 +1,51 @@
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+}
+header h1 {
+    margin: 0;
+}
+nav {
+    background-color: darkseagreen;
+    padding: 10px;
+}
+nav a {
+    display: inline-block;
+    margin: 0 10px; /* Adjust the spacing between links */
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333333; /* Text color */
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+nav a:hover {
+    background-color: #dddddd; /* Background color on hover */
+}
+.site-footer {
+    background-color: #45a049; /* צבע רקע */
+    color: white; /* צבע טקסט */
+    text-align: center; /* יישור טקסט */
+    padding: 0; /* ריווח בפנים */
+    margin-top: 200px; /* ריווח מלמעלה */
+    font-size: 14px; /* גודל טקסט */
+}
+
+.site-footer .container {
+    width: 100%;
+    max-width: 2500px; /* מקסימום רוחב של הכול */
+    margin: 0 auto; /* מירכוז הכול */
+}
+
+.site-footer a {
+    color: cornflowerblue; /* צבע לקישורים */
+    text-decoration: none; /* הסרת קו תחתון */
+}
+
+.site-footer a:hover {
+    text-decoration: underline; /* קו תחתון עבור הובר */
+}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %} 'recommendation' {% endblock %}
+
+{% block page_head_css %}
+    <link rel="stylesheet" href="{{ url_for('recommendation.static', filename='css/recommendation.css') }}">
+{% endblock %}
+
+{% block content %}
+    <h2>המלצות</h2>
+    <div class="grid-container">
+        {% for recommendation in recommendations %}
+        <div class="recommendation">
+            <h3>שם הממליץ: {{ recommendation.pupil }}</h3>
+            <p>חוות דעת: {{ recommendation.feedback }}</p>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+{% block page_body_js %}
+    <script src="{{ url_for('recommendation.static', filename='js/recommendation.js') }}"></script>
+{% endblock %}

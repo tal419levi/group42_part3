@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %} 'history' {% endblock %}
+
+{% block page_head_css %}
+    <link rel="stylesheet" href="{{ url_for('history.static', filename='css/history.css') }}">
+{% endblock %}
+
+{% block content %}
+    <h2>היסטורית שיעורים</h2>
+    <div class="grid-container">
+        {% for lesson in lessons %}
+        <div class="lesson">
+            <h3>שיעור במקצוע: {{ lesson.subject }}</h3>
+            <p>מורה: {{ lesson.teacher }}</p>
+            <p>תאריך: {{ lesson.date }}</p>
+            <p>סוג השיעור: {{ lesson.lesson_type }}</p>
+            <button class="button" type="button">הבע הערכה</button>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="button-container">
+        <button class="history-button" type="button" onclick="history.back()">חזור לתפריט הבית</button>
+    </div>
+{% endblock %}
+
+{% block page_body_js %}
+    <script src="{{ url_for('history.static', filename='js/history.js') }}"></script>
+{% endblock %}

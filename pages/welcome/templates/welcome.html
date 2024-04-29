@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %} 'welcome' {% endblock %}
+
+{% block page_head_css %}
+    <link rel="stylesheet" href="{{ url_for('welcome.static', filename='css/welcome.css') }}">
+{% endblock %}
+
+{% block content %}
+        <div class="container">
+            <h2 dir="rtl" class="title-animation">Teach Me</h2>
+    <h3 dir="rtl">מורים מנוסים לכל המקצועות בכל הארץ!</h3>
+    <img src="https://storage.hidabroot.org/articles_new/121298_tumb_750Xauto.jpg" alt="Your Image" class="centered-image">
+</div>
+{% endblock %}
+
+{% block page_body_js %}
+    <script src="{{ url_for('welcome.static', filename='js/welcome.js') }}"></script>
+{% endblock %}
